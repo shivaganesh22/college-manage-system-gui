@@ -2,6 +2,7 @@
 <head>
 
 College Management System Using Tkinter Python
+<a href=https://github.com/rockstarshivaganesh/college-manage-system-gui/blob/main/main.py>Click Here to view Code</a>
 <h1>Admin Login Credentials</h1>
 <table>
   <tr>
