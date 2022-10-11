@@ -15,13 +15,32 @@ College Management System Using Tkinter Python
   </table>
   
 <h1>Screenshots</h1>
-  <tr>
-    <td ></td>
-    <td ></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-  </tr>
-  </table>
+  <h1>Main page</h1>
   
+ ![](screenshots/Screenshot%202022-10-11%20212331.png)
+  
+  <h1>Admin Login</h1>
+  
+![](screenshots/Screenshot%202022-10-11%20212406.png)
+  
+ <h1> Admin Features</h1>
+  
+  ![](screenshots/Screenshot%202022-10-11%20212446.png)
+  
+  ![](screenshots/Screenshot%202022-10-11%20212602.png)
+  
+ ![](screenshots/Screenshot%202022-10-11%20212747.png)
+  
+  <h1>Student Menu</h1>
+  
+  ![](screenshots/Screenshot%202022-10-11%20215447.png)
+  
+  ![](screenshots/Screenshot%202022-10-11%20215558.png)
+  
+  ![](screenshots/Screenshot%202022-10-11%20215632.png)
+  
+  ![](screenshots/Screenshot%202022-10-11%20215837.png)
+  
+  ![](screenshots/Screenshot%202022-10-11%20215913.png)
+  
+   
