@@ -30,7 +30,7 @@ def viewapp():
     tv.heading(9,text="EMAIL")
   
     
-    with open("applications.csv","r") as f:
+    with open("files/applications.csv","r") as f:
         r=csv.reader(f)
         for row in r :
             if len(row)!=0:
@@ -52,7 +52,7 @@ def apply():
         data.append(cas.get())
         data.append(int(no.get()))
         data.append(email.get().lower())
-        with open("colleges.csv","r") as f:
+        with open("files/colleges.csv","r") as f:
             found=0
             branch=[]
             r=csv.reader(f)
@@ -84,7 +84,7 @@ def apply():
         elif data[2]>(int(branch[i])) :
             Label(apply,text="You are not Eligible",fg="red").place(x=50,y=340)
         elif found==1 :
-            with open("applications.csv","a") as f:
+            with open("files/applications.csv","a") as f:
                 w=csv.writer(f)
                 w.writerows([data])
             apply.destroy()
@@ -146,7 +146,7 @@ def viewreg():
     tv.heading(1,text="Name")
     tv.heading(2,text="Hall Ticket")
     tv.heading(3,text="Username")
-    with open("users.csv","r") as f:
+    with open("files/users.csv","r") as f:
         r=csv.reader(f)
         for row in r :
             if len(row)!=0:
@@ -157,14 +157,14 @@ def searchclg():
     def search():
         data=[]
         c=code.get().upper()
-        with open("colleges.csv","r") as f:
+        with open("files/colleges.csv","r") as f:
             w=csv.reader(f)
             found=0
             for row in w:
                 for column in row:
                     if row[0]==c:
                         data.append(column)
-                        print(data)
+                    
                         found=1
             if found==1:
                 Label(searchclg,text=data[1]).place(x=120,y=50)
@@ -220,7 +220,7 @@ def addclg():
         if data[0]=='' or data[1]=='' or data[2]=='' or data[3]=='' or data[4]=='' or data[5]==''  or data[6]=='' or data[7]=='' or data[8]=='' or data[9]=='' or data[10]=='':
             Label(addclg,text="Enter all details",fg="red").place(x=50,y=350)
         else :
-            with open("colleges.csv","a") as f:
+            with open("files/colleges.csv","a") as f:
                 r=csv.writer(f)
                 r.writerows([data])
             addclg.destroy()
@@ -284,7 +284,7 @@ def editclg():
             Label(editclg,text="Enter all details",fg="red").place(x=50,y=350)
 
         else :
-            with open("colleges.csv","r") as f:
+            with open("files/colleges.csv","r") as f:
                 r=csv.reader(f)
                 found=0
                 details=[]
@@ -297,7 +297,7 @@ def editclg():
                             details.append(row) 
             f.close()
         if found==1:
-            with open ("colleges.csv","w") as f:
+            with open ("files/colleges.csv","w") as f:
                 w=csv.writer(f)
                 w.writerows(details)
             f.close()
@@ -376,7 +376,7 @@ def viewclg():
     tv.heading(10,text="MEC")
     tv.heading(11,text="FEE")
     
-    with open("colleges.csv","r") as f:
+    with open("files/colleges.csv","r") as f:
         r=csv.reader(f)
         for row in r :
             if len(row)!=0:
@@ -441,8 +441,8 @@ def main():
 
                 use=e1.get().lower()
                 
-                print(use)
-                with open("users.csv","r") as f:
+            
+                with open("files/users.csv","r") as f:
     
                     found=0
                     r=csv.reader(f)
@@ -471,7 +471,7 @@ def main():
             det.append(e2.get())
            
             
-            with open("users.csv","r") as f:
+            with open("files/users.csv","r") as f:
                 found=0
                 r=csv.reader(f) 
                 for row in r:
@@ -524,7 +524,7 @@ def main():
             else:
                 
                 
-                with open("users.csv","a") as f:
+                with open("files/users.csv","a") as f:
                     w=csv.writer(f)
                     w.writerows([acc])
                 
