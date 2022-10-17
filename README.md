@@ -16,7 +16,7 @@ College Management System Using Tkinter Python
   </table>
   <h1>Installation<h1>
   <p >Step-1:Download and Extract it<br>
-  Step-2:Open and Run main.py</p>
+  Step-2:Open main.py(Make sure Tkinter is installed)</p>
   
 <h1>Screenshots</h1>
   <h1>Main page</h1>
